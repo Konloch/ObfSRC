@@ -11,7 +11,7 @@ Comments turn into raw source code, nothing is contained within the defined scop
 
 ## How To Use
 ### Step 1) Generate the obfuscated source code
-The easiest way to do this is to look at (the example here)[]
+The easiest way to do this is to look at [the example here](https://github.com/Konloch/ObfSRC/blob/main/src/test/java/com/konloch/TestObfSRC.java)
 
 ### Step 2) Insert the obfuscated source code
 Once you have generated the payload, you can insert it into any class. Depending on the scope you choose, you could execute before the main function has been called.
@@ -32,7 +32,7 @@ System.out.println("\u0022\u0029\u003B\u002F\u002F\u0061\u006E\u0079\u0020\u0076
 ```
 
 #### Examples of the above functions have been included in this test class
-(Click here)[] to view the implementation of these functions.
+[Click here](https://github.com/Konloch/ObfSRC/blob/main/src/test/java/com/konloch/TestObfSRCImpl.java) to view the implementation of these functions.
 
 ## Disclaimer
 + This is just an experiment to showcase a neat feature in the Java compiler.
