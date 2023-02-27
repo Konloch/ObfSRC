@@ -1,0 +1,5 @@
+//any valid Java code can be inserted here
+//keep in mind you - need to use fully qualified names
+{
+    System.out.println("Hidden Source Code Execution Example");
+}
