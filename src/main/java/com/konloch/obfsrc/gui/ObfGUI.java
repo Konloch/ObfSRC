@@ -1,6 +1,5 @@
 package com.konloch.obfsrc.gui;
 
-import com.konloch.disklib.DiskReader;
 import com.konloch.obfsrc.ObfSRC;
 
 import javax.swing.*;
@@ -74,9 +73,9 @@ public class ObfGUI
 	private void obfSRC()
 	{
 		final String source = sourceCode.getText();
-		final String consoleOut = "Method Function Call Example:\n" + new ObfSRC("System.out.println(\"", "\");", source).obfuscate();
-		final String comment = "Comments Example:\n" + new ObfSRC("//", "", "\nstatic " + source).obfuscate();
-		final String docComment = "Doc-Comments Example:\n" + new ObfSRC("/*", "*/", "static " + source).obfuscate();
+		final String consoleOut = "Method Function Call Example:\n" + new ObfSRC("System.out.println(\"", "\");", source).obfuscate() + "\n";
+		final String comment = "Comments Example:\n" + new ObfSRC("//", "", "\nstatic " + source).obfuscate() + "\n";
+		final String docComment = "Doc-Comments Example:\n" + new ObfSRC("/*", "*/", "static " + source).obfuscate() + "\n";
 		
 		SwingUtilities.invokeLater(()->{
 			commentsObfCode.setText(comment);
