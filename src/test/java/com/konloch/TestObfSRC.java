@@ -24,7 +24,7 @@ public class TestObfSRC
 				.obfuscate());
 		
 		System.out.println("Comments Example:\n" +
-				new ObfSRC("//", "", "\nstatic " +DiskReader.readString("./src/test/java/com/konloch/HiddenSourceCodeExample.txt"))
+				new ObfSRC("//", "", "\nstatic " + DiskReader.readString("./src/test/java/com/konloch/HiddenSourceCodeExample.txt"))
 				.obfuscate());
 		
 		System.out.println("Doc-Comments Example:\n" +
