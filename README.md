@@ -10,6 +10,7 @@ Comments turn into raw source code, nothing is contained within the defined scop
 ## 📚 Links
 * [Website](https://konloch.com/ObfSRC/)
 * [Discord Server](https://discord.gg/aexsYpfMEf)
+* [Download Releases](https://github.com/Konloch/ObfSRC/releases)
 
 ## ⚙️ How To Use
 ### Step 1) Generate the obfuscated source code:
