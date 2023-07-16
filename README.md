@@ -1,15 +1,15 @@
 # ObfSRC
 ObfSRC is an experimental way to obfuscate Java source code through unicode escaping.
 
-## How Does This Work?
+## 💡 How Does This Work?
 The Java-Compiler will automatically attempt to decode the escaped unicode, as a result the String turns into raw source code, rather than being defined in the scope of a String.
 Comments turn into raw source code, nothing is contained within the defined scope, I'm assuming the unicode decoding process happens very early in the parsing of the Java source file.
 
-## Links
+## 📚 Links
 * [Website](https://konloch.com/ObfSRC/)
 * [Discord Server](https://discord.gg/aexsYpfMEf)
 
-## How To Use
+## ⚙️ How To Use
 ### Step 1) Generate the obfuscated source code
 The easiest way to do this is to look at [the example here](https://github.com/Konloch/ObfSRC/blob/main/src/test/java/com/konloch/TestObfSRC.java)
 
@@ -34,7 +34,7 @@ System.out.println("\u0022\u0029\u003B\u002F\u002F\u0061\u006E\u0079\u0020\u0076
 #### Examples of the above functions have been included in this test class
 [Click here](https://github.com/Konloch/ObfSRC/blob/main/src/test/java/com/konloch/TestObfSRCImpl.java) to view the implementation of these functions.
 
-## Disclaimer
+## 👨‍💻 Disclaimer
 + This is just an experiment to showcase a neat feature in the Java compiler.
 + This **doesn't obfuscate any of the bytecode**, the compiled class will show clearly what you are trying to hide.
 + Oddly enough **Intellij/Eclipse treat these entirely as Strings/Comments/Whatever you're hiding it as**, however, I'm sure there is some option to change that.
