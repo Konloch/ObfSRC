@@ -15,13 +15,9 @@ public class ObfGUI
 {
 	private JFrame frame;
 	private JTextArea sourceCode;
-	private JScrollPane sourceCodeSP;
 	private JTextArea commentsObfCode;
-	private JScrollPane commentsObfCodeSP;
 	private JTextArea docCommentsObfCode;
-	private JScrollPane docCommentsObfCodeSP;
 	private JTextArea methodCallObfCode;
-	private JScrollPane methodCallObfCodeSP;
 	
 	public void build()
 	{
@@ -30,14 +26,14 @@ public class ObfGUI
 		docCommentsObfCode = new JTextArea(null, null, 10, 60);
 		methodCallObfCode = new JTextArea(null, null, 10, 60);
 		JTabbedPane tabbedPane = new JTabbedPane();
-		tabbedPane.add("Comments", commentsObfCodeSP = new JScrollPane(commentsObfCode));
-		tabbedPane.add("Doc-Comments", docCommentsObfCodeSP = new JScrollPane(docCommentsObfCode));
-		tabbedPane.add("Console Out", methodCallObfCodeSP = new JScrollPane(methodCallObfCode));
+		tabbedPane.add("Comments", new JScrollPane(commentsObfCode));
+		tabbedPane.add("Doc-Comments", new JScrollPane(docCommentsObfCode));
+		tabbedPane.add("Console Out", new JScrollPane(methodCallObfCode));
 		JSplitPane split = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
 				UIManager.getBoolean("SplitPane.continuousLayout"),
 				new JButton(UIManager.getString("SplitPane.leftButtonText")),
 				new JButton(UIManager.getString("SplitPane.rightButtonText")));
-		split.add(sourceCodeSP = new JScrollPane(sourceCode), JSplitPane.TOP);
+		split.add(new JScrollPane(sourceCode), JSplitPane.TOP);
 		split.add(tabbedPane, JSplitPane.BOTTOM);
 		
 		frame = new JFrame("ObfSRC");
