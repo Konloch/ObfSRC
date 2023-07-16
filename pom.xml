@@ -51,6 +51,11 @@
 			<artifactId>DiskLib</artifactId>
 			<version>1.2.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.weisj</groupId>
+			<artifactId>darklaf-core</artifactId>
+			<version>3.0.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -112,7 +117,7 @@
 				<configuration>
 					<transformers>
 						<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-							<mainClass>com.konloch.obfsrc.ObfSRC</mainClass>
+							<mainClass>com.konloch.obfsrc.gui.ObfGUI</mainClass>
 							<manifestEntries>
 								<Implementation-Version>${project.version}</Implementation-Version>
 								<X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>

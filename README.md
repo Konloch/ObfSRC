@@ -1,6 +1,8 @@
 # ObfSRC
 ObfSRC is an experimental way to obfuscate Java source code through unicode escaping.
 
+![A screenshot of ObfSRC-GUI](.github/screenshot.png "Screenshot")
+
 ## 💡 How Does This Work?
 The Java-Compiler will automatically attempt to decode the escaped unicode, as a result the String turns into raw source code, rather than being defined in the scope of a String.
 Comments turn into raw source code, nothing is contained within the defined scope, I'm assuming the unicode decoding process happens very early in the parsing of the Java source file.

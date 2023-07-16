@@ -1,5 +1,7 @@
 package com.konloch.obfsrc.gui;
 
+import com.github.weisj.darklaf.LafManager;
+import com.github.weisj.darklaf.theme.DarculaTheme;
 import com.konloch.obfsrc.ObfSRC;
 
 import javax.swing.*;
@@ -37,6 +39,7 @@ public class ObfGUI
 		split.add(tabbedPane, JSplitPane.BOTTOM);
 		
 		frame = new JFrame("ObfSRC");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(new BorderLayout());
 		frame.add(split, BorderLayout.CENTER);
 		frame.pack();
@@ -85,7 +88,11 @@ public class ObfGUI
 	
 	public static void main(String[] args)
 	{
-		ObfGUI gui = new ObfGUI();
-		gui.build();
+		SwingUtilities.invokeLater(()->
+		{
+			LafManager.install(new DarculaTheme());
+			ObfGUI gui = new ObfGUI();
+			gui.build();
+		});
 	}
 }
