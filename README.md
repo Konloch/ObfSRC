@@ -12,8 +12,9 @@ Comments turn into raw source code, nothing is contained within the defined scop
 * [Discord Server](https://discord.gg/aexsYpfMEf)
 
 ## ⚙️ How To Use
-### Step 1) Generate the obfuscated source code
-The easiest way to do this is to look at [the example here](https://github.com/Konloch/ObfSRC/blob/main/src/test/java/com/konloch/TestObfSRC.java)
+### Step 1) Generate the obfuscated source code:
++ The easiest way to do this is to [download the gui](https://github.com/Konloch/ObfSRC/releases/tag/v1.1.0).
++ Alternatively, an API is provided - look at [the example here](https://github.com/Konloch/ObfSRC/blob/main/src/test/java/com/konloch/TestObfSRC.java).
 
 ### Step 2) Insert the obfuscated source code
 Once you have generated the payload, you can insert it into any class. Depending on the scope you choose, you could execute before the main function has been called.
